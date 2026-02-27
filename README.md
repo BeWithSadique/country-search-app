@@ -2,6 +2,9 @@
 
 A simple web application that allows users to search for any country and view important information.
 
+## 🔗 Live Demo
+https://bewithsadique.github.io/country-search-app/
+
 ## 🚀 Features
 
 - Search country by name
