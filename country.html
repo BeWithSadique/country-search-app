@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countrie page</title>
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,regular,500,600,700," rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="country.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo"><a href="index.html">Where in the world !</a></h1>
+            <p class="dark-mode"><i class="fa-regular fa-moon"></i>&nbsp; Dark Mode</p>
+            <p class="light-mode"><i class="fa-regular fa-sun"></i>&nbsp; Light Mode</p>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="back"><a onclick="history.back()"><i class="fa-solid fa-arrow-left"></i> Back</a></div>
+            <div class="full-details">
+                <div class="image"><img src="https://flagcdn.com/tw.svg" alt="flag"></div>
+                <div class="details-content">
+                    <h2>India</h2>
+                    <div class="left-right">
+                        <div class="left">
+                            <p><b>Native Name: </b><span class="nativeName"></span></p>
+                            <p><b>Population: </b><span class="Population"></span></p>
+                            <p><b>Region: </b> <span class="region"></span></p>
+                            <p><b>Sub Region: </b> <span class="sub-region"></span></p>
+                            <p><b>Capital: </b> <span class="capital"></span></p>
+                        </div>
+                        <div class="right">
+                            <p><b>Top Level Domain: </b><span class="top-level-domain"></span></p>
+                            <p><b>Currencies: </b><span class="currencies"></span></p>
+                            <p><b>Languages: </b> <span class="languages"></span></p>
+                        </div>
+                    </div>
+                    <div class="border-countries">
+                        <h3> 
+                            <span>Border Countries:</span> 
+                            <div class="links">
+                                
+                            </div>
+                        </h3>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+    <script src="country.js"></script>
+</body>
+</html>

@@ -1,0 +1,123 @@
+.logo a {color: var(--text-color);}
+.back a{
+    cursor: pointer;
+    color: var(--text-color);
+    padding: 0.5rem 1.5rem;
+    border-radius: 4px;
+    border: 1px solid #111;
+    font-weight: 600;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition:  all 0.2s ease-in-out;
+    background: var(--background-element-color);
+}
+.back a:hover{
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.back a i{
+    padding-right: 15px;
+}
+
+.full-details{
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    gap: 64px;
+}
+.full-details .image{
+    width: 50%;
+    /* height: 400px; */
+    overflow: hidden;
+}
+.full-details .image img{
+    width: 100%;
+}
+.full-details .details-content{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.full-details .details-content h2{
+    color: var(--text-color);
+    line-height: 40px;
+    font-size: 2rem;
+}
+.full-details .details-content .left-right{
+    display: flex;
+    gap: 64px;
+}
+
+.full-details .details-content .left-right p{
+    color: var(--text-color);
+    font-size: 1.2rem;
+    padding-block: 0.2rem;
+    font-weight: 300;
+}
+.full-details .details-content .border-countries{
+    margin-top: 2rem;
+}
+.full-details .details-content .border-countries h3{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.full-details .details-content .border-countries h3 a{
+    color: var(--text-color);
+    padding: 0.3rem 1.5rem;
+    font-size: 0.8rem;
+    border-radius: 4px;
+    border: 1px solid #111;
+    font-weight: 500;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition:  all 0.2s ease-in-out;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+.links a{
+    color: var(--text-color);
+    background: var(--background-element-color);
+}
+
+
+
+@media (max-width: 500px) {
+    .full-details .details-content .left-right {
+        gap: 16px;
+        flex-direction: column;
+    }
+
+    .full-details .details-content .border-countries h3 {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .links {
+        gap: 10px;
+        justify-content: space-between;
+    }
+
+    .full-details .details-content .border-countries {
+        margin-top: 0;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .full-details{
+        margin-top: 4rem;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 32px;
+    }
+
+    .full-details .image {
+        width: 100% !important;
+    }
+}
